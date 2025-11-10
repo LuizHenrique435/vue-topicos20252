@@ -9,7 +9,7 @@ import router from './router'
 import axios from 'axios'
 import { usuarioStore } from './stores/usuario'
 
-axios.defaults.baseURL = 'https://super-duper-waddle-q5qjqq5vj5h4qjr-8080.app.github.dev/'
+axios.defaults.baseURL = 'http://localhost:8080'
 
 axios.interceptors.request.use((config) => {
   const store = usuarioStore()
